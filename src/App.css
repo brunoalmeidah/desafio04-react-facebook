@@ -1,8 +1,99 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 html, body, #app {
   height: 100%;
   margin:0;
+
 }
 
 body {
   background-color: #F2F2F2;
+  font-size: 14px;
+  font-family: 'Helvetica',Arial, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+header {
+  position: relative;
+  background-color: #4A90E2;
+  height: 64px;
+}
+
+header .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  color: #FFF;
+}
+header .content div{
+  display: flex;
+  align-items: center;
+} 
+
+header .content div span {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+#post-list {
+  width: 700px;
+  margin: 0 auto 20px;
+  height: 100%;
+}
+
+.post { 
+  display: flex;
+  flex-direction: column;
+  margin-top:10px;
+  background-color: #FFF;
+  padding: 20px;
+}
+.post-header {
+  display: flex;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right:5px;
+}
+
+.post-header div {
+  display: flex;
+  flex-direction: column;
+  margin-top:5px;
+}
+
+.post-date{
+  color: #9A9A9A;
+  font-size: 11px;
+}
+
+.post-body{
+  border-bottom: 1px #EEEEEE solid;
+  line-height: 22px;
+}
+
+.comment {
+  display: flex;
+  margin-top : 10px;
+}
+.comment div {
+  background-color: #EEEEEE;
+  width: 622px;
+  border-radius: 20px;
+  padding: 10px 15px 10px 15px;
+  line-height: 20px;
+  font-size: 13px;
+  text-align: justify;
+}
+.comment div strong {
+  margin-right: 5px;
 }
